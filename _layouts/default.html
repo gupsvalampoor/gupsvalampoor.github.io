@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+      Government U. P. School, Valampoor
+    </title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/carousel.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    {% include header.html %}
+	    
+    <div class="container marketing">
+		{{ content }}
+		{% include footer.html %}
+    </div>
+    
+    <!-- /container -->
+    
+    
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js">
+    </script>
+    <script src="/assets/js/bootstrap.min.js">
+    </script>
+	<script>
+	var jumboHeight = $('.jumbotron').outerHeight();
+	function parallax(){
+	    var scrolled = $(window).scrollTop();
+	    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+	}
+
+	$(window).scroll(function(e){
+	    parallax();
+	});
+	</script>
+  </body>
+</html>
+
