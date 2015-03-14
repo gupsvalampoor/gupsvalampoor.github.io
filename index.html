@@ -1,28 +1,20 @@
 ---
 layout: default
 ---
-<div class="bg"></div>
-<div class="jumbotron">
-	<h2></h2>
-  <p class="lead"><b>Government U. P. School, Valampoor</b> is set in a scenic village named Valampoor in the Ernakulam district of Kerala state. Established in 1914, the school has carved out some excellent minds working in various fields.</p>
-  <p>Welcome to our official page.</p>
-</div>
-<div id="marketing" class="row">
-	<div class="col-lg-2">
-  	  <img class="img-thumbnail img-responsive" src="/assets/images/corridor.jpg" alt="corridor-pic">
-  </div>
-<div class="col-lg-4">
-	<img class="img-thumbnail img-responsive" src="/assets/images/center.jpg" alt="corridor-pic">
-</div>
-  <div class="col-lg-3"><p>കേരളത്തിൽ, എറണാകുളം ജില്ലയിലെ മഴുവന്നൂർ ഗ്രാമപഞ്ചായത്ത് പരിധിയിൽ ഉൾപ്പെട്ട വലന്പൂർ ഗ്രാമപ്രദേശത്ത് സ്ഥിതിചെയ്യുന്ന സർക്കാർ വിദ്യാലയമാണ് <b>വലന്പൂർ ഗവ. യു. പി. സ്കൂൾ</b>. 1914-ൽ സ്ഥാപിതമായ ഈ വിദ്യാലയത്തിൽ പ്രീ പ്രൈമറി മുതൽ ഏഴാം തരം വരെ കുട്ടികൾ പഠിക്കുന്നുണ്ട്. പാഠ്യ പ്രവർത്തനങ്ങൾക്കു പുറമേ പാഠ്യേതര വിഷയങ്ങളിലും പരിശീലനം നൽകുന്നു. </p>
-	</div>
-  <div class="col-lg-2">
-	  <img class="img-circle" src="/assets/images/shathabdi-logo.png">
-   <p>
-     <a class="btn btn-danger" href="/shathabdi" role="button">
-       ശതാബ്ദി ആഘോഷങ്ങൾ &raquo;
-     </a>
-   </p>
-</div>
-<!-- /.col-lg-4 -->
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>

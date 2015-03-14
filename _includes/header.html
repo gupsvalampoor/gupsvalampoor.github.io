@@ -1,41 +1,55 @@
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">
-          Toggle navigation
-        </span>
-        <span class="icon-bar">
-        </span>
-        <span class="icon-bar">
-        </span>
-        <span class="icon-bar">
-        </span>
-      </button>
-      <a class="navbar-brand" href="/">
-        <b>Govt. U. P. School, Valampoor</b>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="http://blog.gupsvalampoor.in">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="http://www.facebook.com/gupsvalampoor">
-			  <i class="fa fa-facebook fa-lg"></i>
-          </a>
-        </li>
-		<li>
-			<a href="mailto:gupsvalampoor@gmail.com">
-				<i class="fa fa-envelope fa-lg"></i>
-			</a>
-		</li>
-      </ul>
-    </div>
-    <!--/.nav-collapse -->
-  </div>
-</div>
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#shathabdi">Shathabdi</a>
+                    </li>
+		    <li>
+                        <a href="http://blog.gupsvalampoor.in" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Government U. P. School, Valampoor</div>
+                <div class="intro-info">കേരളത്തിൽ, എറണാകുളം ജില്ലയിലെ മഴുവന്നൂർ ഗ്രാമപഞ്ചായത്ത് പരിധിയിൽ ഉൾപ്പെട്ട വലന്പൂർ ഗ്രാമപ്രദേശത്ത് സ്ഥിതിചെയ്യുന്ന സർക്കാർ വിദ്യാലയമാണ് വലന്പൂർ ഗവ. യു. പി. സ്കൂൾ. 1914-ൽ സ്ഥാപിതമായ ഈ വിദ്യാലയത്തിൽ പ്രീ പ്രൈമറി മുതൽ ഏഴാം തരം വരെ കുട്ടികൾ പഠിക്കുന്നുണ്ട്. പാഠ്യ പ്രവർത്തനങ്ങൾക്കു പുറമേ പാഠ്യേതര വിഷയങ്ങളിലും പരിശീലനം നൽകുന്നു.</div>
+		<a href="#about" class="page-scroll btn btn-xl">കൂടുതൽ വായിക്കുക</a>
+            </div>
+        </div>
+    </header>
+<!--
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+ -->
+
